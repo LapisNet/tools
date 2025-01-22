@@ -1,6 +1,6 @@
 function getTime(){
   var date = new Date
-  return date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+  return date.getHours().toString().padStart( 2, 0 ) + ":" + date.getMinutes().toString().padStart( 2, 0 ) + ":" + date.getSeconds().toString().padStart( 2, 0 )
 }
 async function main( time, ours, others ){
   time.innerHTML = getTime()
