@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/template.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+      .favicon {
+        width: 100%;
+        border-radius: 5%;
+        max-height: 100px;
+        overflow-x: auto;
+      }
+      .card > .name {
+        float: right;
+        font-size: 150%;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+      .card > .avatar {
+        margin-left: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 1em #EEFFFF;
+      }
+      .card > .info {
+        border-top: 2px solid #6B6B6B;
+        margin-top: 5px;
+        padding: 4%;
+        max-height: 70px;
+        overflow-y: auto;
+      }
+      .card {
+        background-color: #FFFFFF00;
+        background-image: linear-gradient( to right bottom, #CCFFFA99, #AAEBE299 );
+      }
+      @media screen and (orientation: landscape) {
+        .card {
+          width: 61.3%;
+          font-size: 90%;
+        }
+        .card > .name {
+          margin-top: 1.25em;
+        }
+      }
+    </style>
+  </head>
+  <body onload="main( time, ours, others )">
+    <div id="main">
+      <div id="nav">
+        <span class="left">
+          <a href="" style="text-decoration: none; margin-right: 5px;"><b>LapisTools</b></a>
+          <a href="https://lapis-net.top" style="text-decoration: none;">官网</a>
+        </span>
+        <span class="right" style="font-family: var(--Minecraft-fonts);">
+          <img src="https://lapis-net.top/res/clock.png" style="height: 1.2em">
+          <span id="time"></span>
+        </span>
+	  </div>
+      <div class="content">
+        <h1 class="title">LapisTools</h1>
+        <div><ul>
+          这里是由 <a href="https://lapis-net.top">LapisNet</a> 维护的Minecraft工具箱喵 ~<br>
+          点击想要的工具即可进入哦w<br>
+          想投稿(?)，直接给我(Love-Kogasa)发邮件就好，小项目也可以哦<br>
+          邮箱: 1983997053@qq.com
+        </ul></div>
+        <h1 class="title">原创</h1>
+        <ul id="ours"></ul>
+        <h1 class="title">非原创</h1>
+        <ul id="others"></ul>
+      </div>
+    </div>
+    <!--<div id="footer">Copyright (c) LapisNet 2025</div>-->
+  </body>
+</html>
