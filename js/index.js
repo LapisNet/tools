@@ -5,6 +5,9 @@ function getTime(){
 async function main( time, ours, others ){
   time.innerHTML = getTime()
   var data = await (await fetch( "./tools.json" )).json()
+  if( !window.location.href.includes( "#/" ) ){
+    window.location.href = "#/"
+  }
   for( let our of data[ "原创" ] ){
     ours.innerHTML += `<div class="card" onclick="(window.location.href = '${loadstring(our.url, our)}')">
       <img class="avatar" src="${loadstring(our.icon || "css/default.png", our)}">
