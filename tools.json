@@ -4,6 +4,11 @@
       "url": "https://recper.lapis-net.top",
       "icon": "{{url}}/icon.png",
       "description": "RESMCF编译器<br>帮助你通过JavaScript更方便的完成mcfunction！"
+    },
+    { "name": "McPack Manifest生成器",
+      "url": "https://mcpack.mcisee.top/",
+      "icon": "{{url}}/assets/icons/favicon.ico",
+      "description": "一个面向Minecraft基岩版创作者的Manifest生成器！"
     }
   ],
   "非原创": []
