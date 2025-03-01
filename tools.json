@@ -9,6 +9,10 @@
       "url": "https://mcpack.mcisee.top/",
       "icon": "{{url}}/assets/icons/favicon.ico",
       "description": "一个面向Minecraft基岩版创作者的Manifest生成器！"
+    },
+    { "name": "Mc命令自动补全",
+      "url": "http://mact.mcisee.top/",
+      "description": "自动纠正你的mcfunction命令拼写错误！"
     }
   ],
   "非原创": []
